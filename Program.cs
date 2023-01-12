@@ -20,7 +20,10 @@ for (int i = 0; i < strings.Length; i++)
 {
     if(strings[i].Length<=3) ThreeSignCount++;
 }
-//Console.WriteLine(SignCount);
+
+if(ThreeSignCount>0)
+{
+
 string[] ThreeSignStrings = new string[ThreeSignCount];
 
 int j=0;
@@ -33,5 +36,9 @@ for (int i = 0; i < strings.Length; i++)
     }
 }
 Console.WriteLine();
+
 Console.WriteLine("массив из заданных строк, длина которых не превышает 3 символа:");
 ArrayPrint(ThreeSignStrings);
+
+}
+else Console.WriteLine("В заданном массиве отсутствуют элементы длина которых не превышает три символа!");
